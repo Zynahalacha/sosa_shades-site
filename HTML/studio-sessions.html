@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Sessions - SOSA_SHADES</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cocoa+Delight&display=swap');
+
+        body {
+            font-family: 'Cocoa Delight', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ADD8E6; /* Light blue background */
+            color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            position: relative;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none; /* Hide dropdown by default */
+            position: absolute;
+            background-color: rgba(51, 51, 51, 0.9);
+            min-width: 160px;
+            z-index: 1000;
+            margin-top: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block; /* Show dropdown on hover */
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #777;
+        }
+
+        .section {
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+        }
+
+        .styled-text {
+            font-size: 1.5em; /* Adjust size as needed */
+            color: #333; /* Change color */
+            font-weight: bold; /* Make the text bold */
+            text-transform: uppercase; /* Make the text uppercase */
+            font-style: italic; /* Make the text italic */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px; /* Space between videos */
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .video-grid iframe {
+            width: 100%; /* Make all videos the same width */
+            height: 200px; /* Set a fixed height for all videos */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer-text {
+            margin: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="songs.html">Songs</a>
+                <div class="dropdown-content">
+                    <a href="albums.html">Albums</a>
+                    <a href="singles.html">Singles</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="video.html">Videos</a>
+                <div class="dropdown-content">
+                    <a href="day-in-the-life.html">Day in the Life</a>
+                    <a href="music-videos.html">Music Videos</a>
+                    <a href="studio-sessions.html">Studio Sessions</a>
+                </div>
+            </div>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div class="section">
+        <h2>Studio Sessions</h2>
+        <p class="styled-text">Experience my creative process as I bring music to life in the studio 🎤🎶🎛️</p>
+        <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/8XI5xZHBzrA?si=lHx2vayG8Tv7r7wX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/QGflmKbCOoQ?si=kUs3O8GSAHVLGMMA" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/5axYs9ljHwA?si=0sHM9F5V7vbdEWjK" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/OM0zgyabJUE?si=RL_mzKSf2x5kfJW8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/Dg7C7AXZhRk?si=DkAffJDeoRdawIOs" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/z9GOV7RyIHA?si=0Kb1Th1cc59PV32v" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/00XzElBZcIs?si=EpdM0I2d71rRjPoK" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/9C3Zq_5cMsE?si=0aoz0QVL849c-QyG" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/jA5upE9Tos4?si=PNRKML6aKrVQdNb1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/H5CmlsqCtKE?si=ZIBLAzr_cTAudetP" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/fx0vv2cfVZI?si=iKkSsIdDiS4UwacZ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/0MVKKcNABjc?si=XDcfc3ntXW24DlWr" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/iC8aCfXsu-Y?si=EKva85j5KN4LwgHK" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">Cash Gang Records</p>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/" target="_blank">
+                <img src="tiktoklogo.png" alt="TikTok" class="social-icon">
+                TikTok
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="instagramlogo.jpeg" alt="Instagram" class="social-icon">
+                Instagram
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="youtubelogo.png" alt="YouTube" class="social-icon">
+                YouTube
+            </a>
+            <a href="https://open.spotify.com/artist/2J6cHIXb5lsV6bmmTZzMli" target="_blank">
+                <img src="spotifylogo.png" alt="Spotify" class="social-icon">
+                Spotify
+            </a>
+        </div>
+        <p>© 2024 SOSA_SHADES. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
