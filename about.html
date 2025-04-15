@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSA_SHADES Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: rgb(26, 13, 163);
+            padding-bottom: 80px;
+            background: url('https://media.giphy.com/media/xTk9ZwzuWiyJ8n5Vzq/giphy.gif') no-repeat center center fixed;
+            background-size: cover; /* Makes the background cover the entire area */
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(51, 51, 51, 0.8); /* Adds transparency */
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1em;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* Adds transparency */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .footer-text {
+            margin: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: auto;
+            margin-right: 8px;
+        }
+
+        .social-icons a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html"><i class="fas fa-home icon"></i> Home</a>
+            <div class="dropdown">
+                <a href="songs.html"><i class="fas fa-music icon"></i> Songs</a>
+                <div class="dropdown-content">
+                    <a href="albums.html">Albums</a>
+                    <a href="singles.html">Singles</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="video.html"><i class="fas fa-video icon"></i> Videos</a>
+                <div class="dropdown-content">
+                    <a href="day-in-the-life.html">Day in the Life</a>
+                    <a href="music-videos.html">Music Videos</a>
+                </div>
+            </div>
+            <a href="shop.html"><i class="fas fa-shopping-cart icon"></i> Shop</a>
+            <a href="about.html"><i class="fas fa-envelope icon"></i> About</a>
+        </div>
+    </nav>
+
+    <footer>
+        <p class="footer-text">Cash Gang Records</p>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/" target="_blank">
+                <img src="tiktoklogo.png" alt="TikTok" class="social-icon">
+                TikTok
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="instagramlogo.jpeg" alt="Instagram" class="social-icon">
+                Instagram
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="youtubelogo.png" alt="YouTube" class="social-icon">
+                YouTube
+            </a>
+            <a href="https://open.spotify.com/artist/2J6cHIXb5lsV6bmmTZzMli" target="_blank">
+                <img src="spotifylogo.png" alt="Spotify" class="social-icon">
+                Spotify
+            </a>
+        </div>
+        <p>© 2024 SOSA_SHADES. All rights reserved.</p>
+    </footer>
+</body>
+</html>

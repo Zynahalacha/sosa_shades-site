@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - SOSA_SHADES Website</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: rgb(26, 13, 163);
+            padding: 0;
+            margin: 0;
+            background-image: url('videobackground.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            font-size: 1.2em;
+            position: relative;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+        .navbar .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .section1 {
+            height: 30vh; /* Reduced height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 70px; /* To account for fixed navbar */
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px; /* Reduced padding */
+        }
+        .video-container {
+            max-width: 1000px; /* Adjusted max width for larger video */
+            margin: 0 auto;
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px; /* Increased height */
+            border: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-text {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+        .social-icons a:hover {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html"><i class="fas fa-home icon"></i> Home</a>
+            <div class="dropdown">
+                <a href="songs.html"><i class="fas fa-music icon"></i> Songs</a>
+                <div class="dropdown-content">
+                    <a href="albums.html">Albums</a>
+                    <a href="singles.html">Singles</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="video.html"><i class="fas fa-video icon"></i> Videos</a>
+                <div class="dropdown-content">
+                    <a href="day-in-the-life.html">Day in the Life</a>
+                    <a href="music-videos.html">Music Videos</a>
+                    <a href="studio-sessions.html">Studio Sessions</a>
+                </div>
+            </div>
+            <a href="shop.html"><i class="fas fa-shopping-cart icon"></i> Shop</a>
+            <a href="about.html"><i class="fas fa-envelope icon"></i> About</a>
+        </div>
+    </nav>
+
+    <div class="section1">
+        <h2>Watch Our Latest Videos</h2>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/vFEOCd9Kk-s" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p class="footer-text">Cash Gang Records</p>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/" target="_blank">
+                <img src="tiktoklogo.png" alt="TikTok" class="social-icon">
+                TikTok
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="instagramlogo.jpeg" alt="Instagram" class="social-icon">
+                Instagram
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="youtubelogo.png" alt="YouTube" class="social-icon">
+                YouTube
+            </a>
+            <a href="https://open.spotify.com/artist/2J6cHIXb5lsV6bmmTZzMli" target="_blank">
+                <img src="spotifylogo.png" alt="Spotify" class="social-icon">
+                Spotify
+            </a>
+        </div>
+        <p>© 2024 SOSA_SHADES. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media.giphy.com/media/off1zk5dLNZ2H6tLYs/giphy.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Styles */
+.section1 {
+    padding-top: 70px; /* Adjust padding to avoid overlap with fixed nav */
+    text-align: center;
+    padding: 20px;
+    color: #fff; /* Optional: Change text color for better visibility */
+    flex: 1; /* Allow this section to grow and fill available space */
+}
+
+.section1 iframe {
+    width: 100%; /* Set width to 100% for responsiveness */
+    height: 600px; /* Adjust height as needed */
+    max-width: 1200px; /* Increased max width for larger display */
+    margin-bottom: 20px; /* Space below the GIF */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
